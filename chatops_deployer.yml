@@ -1,0 +1,5 @@
+expose:
+  web: [4000]
+
+commands:
+  - ['web', 'bundle install']
