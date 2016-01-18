@@ -5,63 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>GCRC 2016</title>
-    <style>
-      body {
-        font-size: 100%;
-        font-family: "ratio-display", "Fira Sans", "Source Sans Pro", sans-serif;
-      }
-
-      .notice--heading {
-        font-size: 2.5rem;
-        line-height: 1.4;
-        font-weight: 300;
-      }
-
-      .notice--subhead {
-        font-size: 1.1rem;
-        line-height: 1.4;
-        font-weight: 300;
-      }
-
-      .notice__wrapper {
-        margin: auto;
-        max-width: 43rem;
-        text-align: center;
-        margin-top: 6rem;
-      }
-
-      @media (max-width: 700px) {
-        .notice__wrapper {
-          margin-top: 5rem;
-        }
-      }
-
-      .logo {
-        height: 15em;
-        width: 15em;
-      }
-
-      @media (max-width: 400px) {
-        .notice__wrapper {
-          margin-top: 2rem;
-        }
-
-        .logo {
-          height: 10em;
-          width: 10em;
-        }
-
-        .notice--heading {
-          font-size: 2rem;
-        }
-      }
-
-      .wf-inactive .notice--heading {
-        font-size: 2.2rem;
-      }
-
-
-    </style>
     <script>
       (function(d) {
         var config = {
@@ -71,17 +14,188 @@
         h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
       })(document);
     </script>
+    <link rel="stylesheet" href="assets/css/css.css">
   </head>
   <body>
-    <div class="notice__wrapper">
-      <img src="assets/images/gcrc.svg" alt="Garden City Ruby Conf" class="logo"/>
-      <h1 class="notice--heading">
-        The 2016 edition of Garden City Ruby Conference is coming soon!
-      </h1>
-      <h2 class="notice--subhead">
-        Stay tuned for updates via Twitter
-        <a href="https://twitter.com/GardenCityRb">@GardenCityRb</a>
-      </h2>
+    <!-- <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15554.09749356059!2d77.62896001534422!3d12.938262265760095!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x116853ce31352ab1!2sThoughtWorks!5e0!3m2!1sen!2sin!4v1453130320701" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+    <section class="banner">
+      <img src="assets/images/gcrc.svg" alt="Garden City Ruby Camp" class="logo"/>
+      <h1>Garden City Ruby Camp 2016<small>Venue: Thoughtworks, Koramangala, Bangalore.</small></h1>
+    </section>
+    <div class="wrapper">
+      <h2 class="header">2 day Workshop on</h2>
     </div>
+    <div class="nav clearfix">
+      <a href="#react">
+        React on Rails
+        <small>on 6<sup>th</sup> Feb 2016</small>
+      </a>
+      <a href="#chef">
+        How to deploy a Rails app using Chef?
+        <small>on 7<sup>th</sup> Feb 2016</small>
+      </a>
+    </div>
+    <section id="react">
+      <div class="wrapper">
+        <h1>React on Rails workshop</h1>
+        <p>In this workshop, we will learn about ReactJS and using ReactJS with a Ruby on Rails.</p>
+        <p>We will be building an app with React and Rails to learn about React as well as how to integrate it effectively with Rails.</p>
+        <h3>Content</h3>
+        <ul>
+          <li>React basics.</li>
+          <li>React rendering model.</li>
+          <li>Component LifeCycle methods.</li>
+          <li>Data flow within React components.</li>
+          <li>Animation.</li>
+          <li>Setting up Rails app to use React.</li>
+          <li>CRUD operations on data.</li>
+          <li>Nested data and CRUD operations.</li>
+          <li>Passing Active Record Data to and fro React components.</li>
+          <li>Strategies to use React with Rails like webpack, browserify, etc.</li>
+          <li>Deploying Rails apps with React.</li>
+        </ul>
+        <p>At the end of the workshop, the attendees will get understanding of basics of React and how to integrate it with Rails. They will also have a working example of such app to continue learning further.</p>
+        <h3>Prerequisites</h3>
+        <ul>
+          <li>Familarity with Rails is expected. No prior knoweldge of React is required.</li>
+          <li>Attendees are expected to bring laptos setup with Rails.</li>
+        </ul>
+        <hr>
+        <h2>Instructors</h2>
+        <ul>
+          <li>Prathamesh Sonpatki(<a href="https://twitter.com/_cha1tanya" target="_blank">@_cha1tanya</a>)</li>
+          <li>Vipul A M(<a href="https://twitter.com/vipulnsward" target="_blank">@vipulnsward</a>)</li>
+        </ul>
+      </div>
+    </section>
+    <section class="bg-gray" id="chef">
+      <div class="wrapper">
+        <h1>React on Rails workshop</h1>
+        <h3>Motivation - why automate infrastructure?</h3>
+        <ul>
+          <li>Laziness, impatience, hubris - Larry Wall</li>
+          <li>Why is Chef needed?</li>
+          <li>What do we gain?</li>
+          <li><a href="http://devtoprod.com/courses/chef-fundamentals/sections/chef-why-automate-infrastructure" target="_blank">http://devtoprod.com/courses/chef-fundamentals/sections/chef-why-automate-infrastructure</a></li>
+        </ul>
+        <h3>Write your first recipe</h3>
+        <ul>
+          <li>Get familiar with Chef directory structure</li>
+          <li>Create a new Chef project
+            <ul>
+              <li>Use knife to create a new project</li>
+            </ul>
+          </li>
+          <li>Understand tools and terminology</li>
+          <li>Run it on vagrant
+            <ul>
+              <li>Recipe for ntp daemon, make sure process is running on Vagrant</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h3>How to organize your Chef code?</h3>
+        <ul>
+          <li>What are Cookbooks?</li>
+          <li>Roles, Attributes, Databags (data in general)</li>
+          <li>Separation of code and data - why this is important
+            <ul>
+              <li>Allows reuse of same code across many contexts and envs</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h3>How to harness the Chef ecosystem / community</h3>
+        <ul>
+          <li>Add a few existing cookbooks in the mix
+            <ul>
+              <li>Understand how cookbooks are configured using data</li>
+              <li>Start with something basic like apt-cookbook, move on to setting up apt, users, sudoers, ssh</li>
+              <li>Baseline system configuration is done</li>
+              <li>Talk about what baseline means - common to ALL machines.</li>
+              <li>Baseline is a ROLE.</li>
+              <li>Refer back to advantages mentioned in motivation</li>
+            </ul>
+          </li>
+          <li>Berkshelf</li>
+          <li>How to tell whether a community cookbook is good quality?</li>
+          <li>How to make changes to cookbooks - fork and use? Wrap in your own?</li>
+          <li>Bonus: contributing back to the community</li>
+        </ul>
+
+        <h3>Start with setting up Rails</h3>
+        <ul>
+          <li>Install Ruby using cookbook
+            <ul>
+              <li>Which version?</li>
+              <li>How?</li>
+              <li>Binary or source?</li>
+              <li>Should it be a part of the baseline role? Maybe, maybe not? Talk about why.</li>
+            </ul>
+          </li>
+          <li>Install Bundler using cookbook
+            <ul>
+              <li>Same questions as above.</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h3>Moving to a n-tier architecture</h3>
+        <ul>
+          <li>Lets start with 3 tiers - web, app, db</li>
+          <li>DB
+            <ul>
+              <li>Setup Postgres server with sane and secure defaults</li>
+            </ul>
+          </li>
+          <li>App layer with nginx-passenger</li>
+          <li>Web layer with nginx</li>
+          <li>Launch it on localhost and see that it works</li>
+        </ul>
+
+        <h3>Overarching concerns</h3>
+        <ul>
+          <li>Always be security conscious</li>
+          <li>Performance tuning</li>
+          <li>Configur-ability - what do I need to do to change a config across 20 machines?</li>
+        </ul>
+
+        <h3>Deployment to AWS, etc.</h3>
+        <ul>
+          <li>If time permits, our code should be reusable enough to just deploy to AWS/DO.</li>
+          <li>Makes the point about why automate infrastructure clearer.</li>
+          <li>More bonus discussions</li>
+          <li>Versioning infrastructure</li>
+          <li>Immutable infra</li>
+          <li>Docker</li>
+          <li>Testing infra code - continuous integration.</li>
+        </ul>
+        <hr>
+        <h2>Instructors</h2>
+        <ul class="instructors">
+          <li class="clearfix">
+            <img src="assets/images/sahil.jpg"/>
+            <h3>Sahil Muthoo</h3>
+            <p>Sahil writes software for the joy of creation. He loves that feeling when castles of sand in his head come alive inside a computer. He’s been tinkering with Chef + Rails since 2012.</p>
+          </li>
+          <li class="clearfix">
+            <img src="assets/images/mohit.jpg"/>
+            <h3>Mohit Thatte</h3>
+            <p>Mohit is addicted to learning, and believes ‘Ars longa, vita brevis’. He also believes that software development is primarily about teams, culture and empathy.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="assets/js/jquery-2.0.2.min.js"></script>
+    <script type='text/javascript'>
+      $(window).load(function() {
+          scrollChecker();
+      });
+
+      function scrollChecker() {
+        var logoTrigger = 80;
+        var scrollPosition = $(window).scrollTop();
+      }
+    </script>
   </body>
 </html>
