@@ -188,14 +188,18 @@
     </div>
     <script src="assets/js/jquery-2.0.2.min.js"></script>
     <script type='text/javascript'>
-      $(window).load(function() {
-          scrollChecker();
-      });
+      $(document).ready(function(){
+        $('a[href^="#"]').on('click',function (e) {
+            e.preventDefault();
 
-      function scrollChecker() {
-        var logoTrigger = 80;
-        var scrollPosition = $(window).scrollTop();
-      }
+            var target = this.hash;
+            var $target = $(target);
+
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 900, 'swing');
+        });
+      });
     </script>
   </body>
 </html>
