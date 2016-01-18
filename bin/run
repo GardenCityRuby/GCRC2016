@@ -5,6 +5,6 @@ require 'pathname'
 APP_ROOT = Pathname.new File.expand_path('../../',  __FILE__)
 
 Dir.chdir APP_ROOT do
-  system "bundle exec jekyll serve"
+  system "bundle exec jekyll serve --host 0.0.0.0"
 end
 
