@@ -92,14 +92,17 @@ section.bg-gray {
 }
 
 .btn {
-  width: 50%;
+  width: 45%;
   color: #dd3f50;
+  display: block;
   padding: 0.8em;
+  margin: 0 auto;
   cursor: pointer;
   font-size: 1.5em;
   font-weight: 500;
   line-height: 1.4;
   border-radius: 6px;
+  text-decoration: none;
   background-color: #fff;
   border: 1px solid #dd3f50;
 }
