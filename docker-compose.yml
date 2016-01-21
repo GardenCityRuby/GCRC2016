@@ -1,0 +1,9 @@
+web:
+  build: .
+  command: ./bin/run
+  environment:
+    - BUNDLE_PATH=/cache/tmp/bundler
+  volumes_from:
+    - cache
+  ports:
+    - "4000"
