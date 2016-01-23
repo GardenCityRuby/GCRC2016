@@ -1,7 +1,7 @@
 html { font-size: 100%; }
 body {
   margin: 0;
-  font-family: 'Facit';
+  font-family: 'jaf-facitweb', 'Facit', Avenir, Helvetica, Arial, sans-serif;
   font-weight: 400;
   line-height: 1.5;
 }
