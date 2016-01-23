@@ -76,7 +76,7 @@ li {
   font-size: 2rem;
   margin-bottom: 3rem;
   text-align: center;
-  font-weight: 700;
+  font-weight: 300;
 }
 
 .logo--description {
@@ -89,6 +89,7 @@ li {
 .strike-through {
   text-decoration: line-through;
   text-decoration-color: #333;
+  font-weight: 300;
 }
 
 .italic {
@@ -287,7 +288,7 @@ footer a:hover {
   }
 
   .logo--description, .workshops, .workshop--date {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .left, .right {
@@ -300,5 +301,9 @@ footer a:hover {
 
   .workshop--heading {
     margin: 0;
+  }
+
+  .workshops--heading {
+    margin-bottom: 1rem;
   }
 }
